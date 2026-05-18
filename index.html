@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Brenda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="justify-content: center;">
+
+    <h1>Eu lhe tive por quase um ano na minha vida e sei que isso vai ecoar em mim <em>pra sempre</em>.</h1>
+    <h2>Este site vai ser atualizado, todos os dias, durante <em>um</em> ano.</h2>
+    <h2>E durante esse período, espero que eu consiga mostrar, <em>virtualmente</em>, tudo o que eu conseguir.</h2>
+    <p class="signature">com amor e sinceridade, a cada dia, sempre às 18h00</p>
+    <p class="signature">- Evandro.</p>
+
+    <audio id="musicaFundo" src="trilha.mp3" loop></audio>
+
+    <button id="btnPlay" class="btn-secundario" style="margin-top: 2rem; display: none; background: rgba(255,255,255,0.1);">
+        🎵 Ouvir The Night We Met - Lord Huron
+    </button>
+
+    <a href="cartas.html" class="btn">Ler nossas cartas</a>
+
+    <script>
+        const audio = document.getElementById('musicaFundo');
+        const btnPlay = document.getElementById('btnPlay');
+
+        // Assim que a página carregar, o site tenta dar o play
+        window.addEventListener('load', () => {
+            audio.play().catch(() => {
+                // Se der erro (o navegador bloqueou o som), ele mostra o botão
+                btnPlay.style.display = 'inline-block';
+            });
+        });
+
+        // Se ela precisar clicar no botão, a música toca e o botão some
+        btnPlay.addEventListener('click', () => {
+            audio.play();
+            btnPlay.style.display = 'none';
+        });
+
+        // Truque extra: se ela clicar em qualquer lugar da tela (tipo um toque acidental), a música também tenta tocar
+        document.body.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                btnPlay.style.display = 'none';
+            }
+        }, { once: true });
+    </script>
+</body>
+</html>
