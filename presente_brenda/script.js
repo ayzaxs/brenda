@@ -70,6 +70,13 @@ const minhasCartas = [
         spotifyTrackId: "6WkJ2OK163XXS2oARUC9JM",
         linkTraducao: "https://www.letras.mus.br/aaron-smith/472671/"
     }
+    {
+        id: 11,
+        dataLiberacao: "2026-06-05",
+        conteudo: "Hoje não é um dia legal, mé? Acho que a semana inteira não foi. Olha, eu voltei dessa vez porque eu precisava ter certeza, Brenda. E eu tive. Você vai ser, para sempre, a pessoa que eu mais vou gostar e amar. Eu carrego você dentro do meu coração. Sabe, eu teria dado o nome da nossa filha de Selene. Sim, igual ao nome da Lua. Que é chamada, na mitologia Grega, de Selene. Eu acho sinceramente que teria sido um nome muito autêntico. Tipo, quantas Selenes você conhece? Sabe, teria sido tão bom viver tudo isso ao seu lado. E sim, eu digo até sobre aqueles cocôs da madrugada que a gente teria que limpar. Também falo das noites que a gente teria que passar acordados porque simplesmente ela estaria com dor de barriguinha ou porque os dentinhos estariam nascendo. Realmente, teria sido absurdamente bom. Teria sido a melhor viagem da minha vida, mesmo sem nem sair de casa. Nos meus sonhos, já estava tudo acertado. Ainda assim, só eu cumpri com a minha promessa. Eu prometi que nada faltaria, que eu conseguiria coisa melhor, que eu não iria te abandonar com ela. Mas de novo, só eu cumpri com a minha promessa. Você dizia que eu tinha medo, mas sinceramente? Eu fui a pessoa mais corajosa e sem medo que eu já conheci em toda a minha vida, mesmo em livros e músicas, onde as pessoas e coisas costumam ter esses superpoderes. Eu não fui fraco. Eu não dei pra trás. Eu não teria mudado uma vírgula em absolutamente nada. Obrigado por você ter feito o que fez, eu não saberia como partir definitivamente. Você sempre vai estar comigo. Vocês duas, aliás. Você irá e terá a sua vida, possivelmente com outra pessoa. Você vai ter a sua casa. Você vai ter o seu carro. Você vai ter os seus filhos. Você vai ter até um lugar na casa destinado especialmente pra aquelas plantas estranhas que você dizia gostar e até vai dar de colocar o terrário lá. Vai ficar tudo bem, né? Eu te amo de verdade. E sei que vou amar pra sempre. Nada disso foi mentira...",
+        spotifyTrackId: "75JFxkI2RXiU7L9VXzMkle",
+        linkTraducao: "https://www.letras.mus.br/coldplay/64278/"
+    } 
 ];
 function renderizarCartas() {
     const containerHoje = document.getElementById('container-hoje');
