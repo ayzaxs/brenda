@@ -157,3 +157,13 @@ nav { margin-top: 2rem; display: flex; gap: 1rem; }
     border-color: var(--text-main);
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+.carta-imagem {
+    width: 100%; /* Ocupa a largura total da carta */
+    max-height: 400px; /* Evita que fique gigante em telas maiores */
+    aspect-ratio: 1 / 1; /* Força o formato quadrado perfeito */
+    object-fit: cover; /* Corta as sobras sem distorcer a foto */
+    border-radius: 12px; /* O mesmo arredondamento do iframe do Spotify */
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar */
+}
